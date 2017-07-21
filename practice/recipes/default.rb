@@ -6,6 +6,8 @@
 package 'nano' do
   action :install
 end
+package 'wget' do
+end
 
 directory '/var/website' do
   owner 'root'
