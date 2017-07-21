@@ -1,1 +1,1 @@
-node.default[:cookbookname]='practice'
+default['practice']['name'] =  "practice"

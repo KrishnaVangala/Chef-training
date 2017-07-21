@@ -24,6 +24,15 @@ file '/var/website/directions.txt' do
   action :create
 end
 
+template '/var/website/builder.txt' do
+  source 'builder-txt.erb'
+  owner 'root'
+  group '3'
+  mode '0755'
+  action :create
+end
+
+
 file '/var/website/builder.txt' do
   content default.[:cookbookname] 'build this'
   owner 'root'
