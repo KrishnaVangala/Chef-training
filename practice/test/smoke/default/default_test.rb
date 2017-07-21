@@ -21,3 +21,7 @@ describe directory '/var/old-website' do
   it { should_not exist}
 end
 
+describe file '/var/website/builder.txt' do
+  its('content') { should match (%r{practice build this})} 
+end
+
