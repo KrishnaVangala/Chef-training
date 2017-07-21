@@ -18,6 +18,6 @@ describe package 'nano' do
 end
 
 describe directory '/var/old-website' do
-  it { should_not exists}
+  it { should_not exist}
 end
 
