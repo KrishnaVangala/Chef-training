@@ -33,13 +33,6 @@ template '/var/website/builder.txt' do
 end
 
 
-file '/var/website/builder.txt' do
-  content default.[:cookbookname] 'build this'
-  owner 'root'
-  group 'root'
-  mode '0755'
-  action :create
-end
 
 execute 'logo download' do
   command 'wget https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQmQ0CYwU3cpFE6gEB82cp6TSIcBJSisax_HVvEfsgYHGBsO8kQ -P /var/website/'
