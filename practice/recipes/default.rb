@@ -25,7 +25,7 @@ file '/var/website/directions.txt' do
 end
 
 file '/var/website/builder.txt' do
-  content '[:cookbookname] build this'
+  content default.[:cookbookname] 'build this'
   owner 'root'
   group 'root'
   mode '0755'
