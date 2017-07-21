@@ -17,3 +17,7 @@ describe package 'nano' do
   it { should be_installed } 
 end
 
+describe directory '/var/old-website' do
+  it { should not_exists}
+end
+
