@@ -1,6 +1,6 @@
 ---
 driver:
- name: docker
+ name: vagrant
  privileged: true
  use_sudo: false
 
