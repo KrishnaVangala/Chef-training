@@ -27,7 +27,7 @@ end
 template '/var/website/builder.txt' do
   source 'builder-txt.erb'
   owner 'root'
-  group '3'
+  group 'root'
   mode '0755'
   action :create
 end
